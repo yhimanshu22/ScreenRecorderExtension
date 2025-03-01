@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Screen Recorder",
+    "version": "1.0",
+    "description": "Record your screen and save it as a video file.",
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
