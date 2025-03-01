@@ -5,15 +5,21 @@
     "description": "Record your screen and save it as a video file.",
     "permissions": [
         "tabs",
-        "activeTab"
+        "activeTab",
+        "storage",
+        "display-capture",
+        "microphone"
     ],
     "background": {
         "service_worker": "background.js"
     },
     "action": {
         "default_popup": "popup.html",
-        "default_icon": {
-            "16": "icon.jpeg"
-        }
+        "default_icon": "icon.jpeg"
+    },
+    "icons": {
+        "16": "icon.jpeg",
+        "48": "icon.jpeg",
+        "128": "icon.jpeg"
     }
 }
